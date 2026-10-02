@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;" >
+    <div class="parent">
+        <div class="days">monday</div>
+        <div class="days">tuesday</div>
+        <div class="days">thursday</div>
+        <div class="days">friday again</div>
+    </div>
+    
+</body>
+<script>
+    const parent =document.querySelector('.parent')
+    // console.log(parent)
+    // console.log(parent.children)
+    // console.log(parent.children[1].innerHTML);
+    // for (let index = 0; index < parent.children.length; index++) {
+    //    console.log(parent.children[index].innerHTML);
+    // }
+    parent.children[1].style.color='orange'
+   // console.log(parent.firstElementChild); // int the same way last child
+    const dayone = document.querySelector('.days')
+    console.log(dayone);
+    console.log(dayone.parentElement);
+    console.log(dayone.parentElement); // nextelementsibling also exists
+    console.log("NODES" , parent.childNodes);
+    
+    
+    
+
+    
+</script>
+</html>
