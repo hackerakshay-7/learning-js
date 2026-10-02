@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>briyani</title>
+</head>
+<body style="background-color: black; color: aliceblue;" >
+    <ul class="language">
+        <li>js</li>
+        <li>bs</li>
+    </ul>
+    
+</body>
+<script>
+    // non optimal bcoz of whole tree traversing
+    function add_ul(lil){
+       const li= document.createElement('li')
+       li.innerHTML = `${lil}`
+       document.querySelector('.language').appendChild(li)
+    }
+    add_ul('python')
+    add_ul('bhagalpur')
+        //optimized
+    function add_ul_opt(lil){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lil))
+        document.querySelector('.language').appendChild(li)
+    }
+    add_ul_opt('bihar')
+    add_ul_opt("baingan")
+</script>
+</html>
