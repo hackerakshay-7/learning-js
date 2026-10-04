@@ -29,5 +29,17 @@
     }
     add_ul_opt('bihar')
     add_ul_opt("baingan")
+    // EDIT
+    const editli = document.querySelector("li:nth-child(2)")
+    //editli.innerHTML='jojo'
+    // another way
+   const newli= document.createElement('li')
+   newli.textContent = ' jijo'
+   editli.replaceWith(newli)
+   //OR
+   let firstlang=document.querySelector('li:first-child')
+   firstlang.outerHTML = '<li> briyani </li>'
+   // DELETE
+  // document.querySelector('li:last-child').remove()
 </script>
 </html>
