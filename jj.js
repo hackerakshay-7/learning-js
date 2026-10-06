@@ -33,9 +33,23 @@ function isv (guess){
             endgame()
         }
         else{
-            
+            displayguess(guess)
+            check(guess)
         }
     }
 }
- isv(submit)
+function check(guess){
+    if(guess==num){
+        displaymsg(`badhai ho`)
+        endgame();
+    }
+    else if( guess>num){ displaymsg('bahut bada hai bhau')}
+    else{ displaymsg('chote log choti soch')}
+}
+function displayguess(guess){
+    input
+}
+function displaymsg(msg){
+
+}
 
