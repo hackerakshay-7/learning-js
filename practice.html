@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> thrilling summer and autumn</h1>
+    <button id="btn">okay!!</button>
+</body>
+<script>
+    const changecontent = function(){
+        document.querySelector('h1').innerHTML = "bihari babu"}
+        const change =setTimeout(changecontent,3000);
+        // clear timeout is used to prevent settimeout
+    let click=  document.querySelector('#btn').addEventListener('click',()=>{
+        clearTimeout(change)
+    });
+
+</script>
+</html>

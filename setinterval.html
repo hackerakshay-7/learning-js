@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shitty titty</title>
+</head>
+<h1> soMe tRash</h1>
+<button id="btn">stop!!</button>
+<button id="butn">start!!</button>
+<body>
+    
+</body>
+<script>
+    let dio;
+    let pumpit =function(str){
+        console.log(str,Date.now().toLocaleString());
+    }
+    document.querySelector('#btn').addEventListener('click',()=>{
+        clearInterval(dio);
+    })
+    document.querySelector('#butn').addEventListener('click',()=>{
+       dio=setInterval(pumpit,1000,'lubi');
+    })
+</script>
+</html>

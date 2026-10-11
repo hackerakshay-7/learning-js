@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Key</title>
+</head>
+<link rel="stylesheet" href="stu.css">
+<div class="characters">
+    <img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2025/12/black-clover-season-2-new-anime-with-asta-holding-a-sword-and-grinning.jpg?q=49&fit=crop&w=825&dpr=2" class="character asta" alt="Asta">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmBeBcxdOBDO08oZNEAgxaLd2Uz3O49bL0aeE8lZhbEw&s=10" class="character yuno" alt="Yuno">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpzAVBTtqzuAHk4ROPAHGUjYXICKh2j9v9rGV9PYiCg&s=10" class="character noelle" alt="Noelle">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBaYeYSec4QnI3TEto3yo78zeXiG0JBtAN7OLh7lLb7Q&s=10" class="character yami" alt="Yami">
+</div>
+
+<div class="insert"></div>
+<body>
+    <h2>press any key to see magic</h2>
+    <div class="insert"></div>
+</body>
+<script>
+   let insert= document.getElementsByClassName('insert')[0];
+   window.addEventListener('keydown',(e)=>{
+    insert.innerHTML=`
+    <div class ="color">
+        <table>
+  <tr>
+    <th>key</th>
+    <th>keycode</th>
+    <th>code</th>
+  </tr>
+  <tr>
+    <td>${ e.key ===' '?'space':e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+</div>
+    `
+   })
+</script>
+</html>
