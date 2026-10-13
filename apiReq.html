@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body> <p>
+0	UNSENT	Client has been created. open() not called yet. <br>
+1	OPENED	open() has been called. <br>
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available. <br>
+3	LOADING	Downloading; responseText holds partial data. <br>
+4	DONE	The operation is complete. </p>
+ </body>
+ <script>
+    function senreq(){
+
+    }
+    const apilink = 'https://api.github.com/users/hackerakshay-7' // request url
+    const obj = new XMLHttpRequest();
+    obj.open('GET',apilink)
+    // jaise hi state change hoga waise hi ye function execute hoga i.e async
+    obj.onreadystatechange = ()=>{
+        console.log(obj.readyState);   
+        if(obj.readyState==4){
+            // the data recieved from api are mostly in string format but is json in design
+            const data = JSON.parse(obj.responseText)
+            console.log(data.followers);
+            console.log(data.blog)
+            
+           // console.log(obj.responseText)
+        }
+    }
+    obj.send();
+
+ </script>
+ </html>
+ <!-- before fetch people used xml http requests -->
+  <!-- ajax means asynchronus javascript and xml  -->
