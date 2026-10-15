@@ -9,4 +9,8 @@
 v8 providdes the api tools and debuggers to js
 
 --> file access is not direct we need to have kernel access // kernel file laake deta hai
-async wait or promise
+async await or promise
+
+use either then and catch or async await
+// async await cant handle errors directly
+
