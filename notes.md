@@ -14,3 +14,8 @@ async await or promise
 use either then and catch or async await
 // async await cant handle errors directly
 
+-> fetch is a global network based request it is the succesor of xhr/xmlhttp req
+// diagram (photo)  fetch ke liye alag se q bnta hai // micro task q or priority q
+
+# js is a prototype based language not class based
+
