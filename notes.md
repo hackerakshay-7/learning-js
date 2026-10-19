@@ -18,4 +18,13 @@ use either then and catch or async await
 // diagram (photo)  fetch ke liye alag se q bnta hai // micro task q or priority q
 
 # js is a prototype based language not class based
+## new keyword is a constructor function
+-> javascript has prototypal beheviour i.e. upar ka layer aur uske upar ka layer jaake dkhti hai till its null
+
+## > new keyword prototyping ki dain classes , this , inheritance all this behaviour
+// prototyping matbal haar nahi maanana
+# js meh sabkuch object hai
+
+## lmund function function bhi hai aur function object bhi hai
+# factory functions are by default functions
 
